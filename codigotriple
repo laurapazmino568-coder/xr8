@@ -1,0 +1,29 @@
+def dividir(a, b):
+    return a / b
+
+
+def promedio(lista):
+    suma = 0
+    for i in range(len(lista)):
+        suma = suma + lista[i]
+    return suma / len(lista)
+
+
+def buscar_numero(lista, numero):
+    encontrado = False
+    for i in range(len(lista)):
+        if lista[i] == numero:
+            encontrado = True
+    return encontrado
+
+
+x = 10
+y = 0
+
+resultado = dividir(x, y)
+print("El resultado es: " + resultado)
+
+numeros = []
+print(promedio(numeros))
+
+print(buscar_numero([1,2,3,4,5], 6))
